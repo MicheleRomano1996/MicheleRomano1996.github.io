@@ -27,10 +27,11 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs> 
-    <a-marker preset="hiro" id="aframe-scene">    
-      <a-image id="test" src="https://cdn.glitch.global/85f09f49-4d9d-4d2d-a107-bb99e2418acc/cv_michi.jpg?v=1653843911582" position="0 0 0"></a-image>
+  <a-scene embedded arjs=' debugUIEnabled: false; sourceType: webcam;'> 
+    <a-marker preset="costum" type='pattern' url='https://cdn.glitch.global/85f09f49-4d9d-4d2d-a107-bb99e2418acc/pattern-1_zUxIO_eUSMyDg4Nq0FPY1g%20(1).patt?v=1653844998231'>    
+      <a-sphere position='0 1 0' radius = '0.5' material='color:red'></a-sphere>
     </a-marker>
   </a-scene>
+  <a-entity camera></a-entity>
 </body>
 </html>
